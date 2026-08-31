@@ -1,11 +1,20 @@
 [project]
-name = "xps-analyzer"
-version = "0.3.0"
-description = "Cross-platform Flet application for Avantage XPS data analysis"
+name = "openxpsanalyzer"
+version = "0.4.0"
+description = "Open-source cross-platform Flet application for Avantage XPS data post-processing"
 readme = "README.md"
 requires-python = ">=3.11,<3.13"
 authors = [{ name = "Jay Mamun" }]
 license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Chemistry",
+]
 dependencies = [
     "flet[all]==0.82.2",
     "flet-charts==0.82.2",
@@ -20,6 +29,11 @@ dependencies = [
     "xlrd>=2.0.1",
     "xarray>=2024.10.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/AkiyamaSuguru/OpenXPSAnalyzer"
+Repository = "https://github.com/AkiyamaSuguru/OpenXPSAnalyzer"
+Issues = "https://github.com/AkiyamaSuguru/OpenXPSAnalyzer/issues"
 
 [build-system]
 requires = ["hatchling"]
@@ -36,10 +50,10 @@ dev = [
 ]
 
 [tool.flet]
-org = "com.xpsanalyzer"
-product = "XPS Analyzer"
-company = "Jay Mamun"
-copyright = "Copyright (C) 2026 Jay Mamun. All rights reserved."
+org = "io.github.akiyamasuguru"
+product = "OpenXPSAnalyzer"
+company = "OpenXPSAnalyzer contributors"
+copyright = "Copyright (C) 2026 Jay Mamun and OpenXPSAnalyzer contributors. AGPL-3.0-or-later."
 
 [tool.flet.app]
 path = "src"

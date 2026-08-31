@@ -1,0 +1,49 @@
+name: Bug report
+description: 报告可复现的软件问题
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: 感谢你帮助改进 OpenXPSAnalyzer。请勿上传包含机密或个人信息的数据。
+  - type: input
+    id: version
+    attributes:
+      label: OpenXPSAnalyzer 版本
+      placeholder: 例如 0.4.0
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 平台
+      options:
+        - Web
+        - macOS
+        - Windows
+        - Linux / 开发环境
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 说明实际结果和预期结果。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 导入……
+        2. 选择……
+        3. 看到……
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志或截图
+      description: 请先移除路径、样品信息和其他敏感内容。
+      render: shell

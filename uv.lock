@@ -1466,8 +1466,8 @@ wheels = [
 ]
 
 [[package]]
-name = "xps-analyzer"
-version = "0.3.0"
+name = "openxpsanalyzer"
+version = "0.4.0"
 source = { editable = "." }
 dependencies = [
     { name = "flet", extra = ["all"] },

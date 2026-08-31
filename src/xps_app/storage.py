@@ -124,7 +124,7 @@ def dataset_to_project(dataset: xr.Dataset, file_path: str | Path | None = None)
     """Unpack a project Dataset and validate its schema."""
 
     if dataset.attrs.get("schema_name") != SCHEMA_NAME:
-        raise XPSStorageError("该 NetCDF 文件不是 XPS Analyzer 项目。")
+        raise XPSStorageError("该 NetCDF 文件不是 OpenXPSAnalyzer 项目。")
     if str(dataset.attrs.get("schema_version")) != SCHEMA_VERSION:
         raise XPSStorageError(
             "不支持的项目格式版本："
@@ -267,7 +267,7 @@ def datatree_to_project(
     """Restore an XPS project from a named xarray DataTree."""
 
     if tree.attrs.get("schema_name") != SCHEMA_NAME:
-        raise XPSStorageError("该 NetCDF 文件不是 XPS Analyzer 项目。")
+        raise XPSStorageError("该 NetCDF 文件不是 OpenXPSAnalyzer 项目。")
     if str(tree.attrs.get("schema_version")) != SCHEMA_VERSION:
         raise XPSStorageError(
             "不支持的项目格式版本："
@@ -314,7 +314,7 @@ def save_project(project: XPSProject, file_path: str | Path) -> Path:
 
 
 def load_project(file_path: str | Path) -> XPSProject:
-    """Open and fully load an XPS Analyzer NetCDF project."""
+    """Open and fully load an OpenXPSAnalyzer NetCDF project."""
 
     path = Path(file_path).expanduser()
     if not path.is_file():

@@ -1,0 +1,30 @@
+name: Feature request
+description: 提议新的分析、数据或界面能力
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 研究任务或问题
+      description: 说明需要解决的实际 XPS 工作流问题，而不只是期望的按钮。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案
+      description: 描述输入、输出、交互方式或算法定义。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 已考虑的替代方案
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: 项目边界确认
+      options:
+        - label: 该建议不要求 OpenXPSAnalyzer 替代 Avantage 完成数据采集或完整峰拟合。
+          required: true
