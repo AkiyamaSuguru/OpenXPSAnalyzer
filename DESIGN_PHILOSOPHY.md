@@ -88,8 +88,8 @@ Web、macOS 和 Windows 应共享同一领域模型、分析逻辑和主要交�
 | --- | --- | --- | --- |
 | 源文件 | Avantage 导出的一个 Excel 文件 | 文件路径或上传内容 | `C1s.xlsx` |
 | 谱图 | 一个 Survey 或高分辨区域 | `Spectrum` | `C1s` |
-| 项目 | 一个样品或一次整理后的谱图集合 | `XPSProject` | `B1_sic` |
-| 项目文件 | 可恢复整个项目的持久化文件 | xarray `DataTree` / NetCDF | `B1_sic.nc` |
+| 项目 | 一个样品或一次整理后的谱图集合 | `XPSProject` | `Samples` |
+| 项目文件 | 可恢复整个项目的持久化文件 | xarray `DataTree` / NetCDF | `Samples.nc` |
 
 文件夹导入时，文件夹名通常成为样品或项目名，文件名去除后缀后的 stem 成为谱图名和 xarray 节点名。这一规则简单、可预测，并与实验室已有文件管理习惯一致。
 
