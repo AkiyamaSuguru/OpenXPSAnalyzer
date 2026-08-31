@@ -16,8 +16,8 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Chemistry",
 ]
 dependencies = [
-    "flet[all]==0.82.2",
-    "flet-charts==0.82.2",
+    "flet[all]==0.86.5",
+    "flet-charts==0.86.5",
     "h5netcdf>=1.4.1",
     "h5py>=3.12.1",
     "matplotlib>=3.9.2",
