@@ -1,8 +1,13 @@
-# XPS Analyzer
+# OpenXPSAnalyzer
 
-一个使用 Flet 构建的 Avantage XPS 数据分析应用。它把 Excel 读取、xarray 数据管理、NetCDF 项目存储、悬浮交互图和出版级绘图整合在一个清晰的跨平台工作流中，可运行于网页、macOS 和 Windows。
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
+[![CI](https://github.com/AkiyamaSuguru/OpenXPSAnalyzer/actions/workflows/ci.yml/badge.svg)](https://github.com/AkiyamaSuguru/OpenXPSAnalyzer/actions/workflows/ci.yml)
 
-项目的产品原则、数据契约、交互取舍和工程演进边界见 [《XPS Analyzer 软件设计哲学手册》](DESIGN_PHILOSOPHY.md)。
+OpenXPSAnalyzer 是一个使用 Flet 构建的开源 Avantage XPS 数据后处理应用。它把 Excel 读取、xarray 数据管理、NetCDF 项目存储、悬浮交互图和出版级绘图整合在一个清晰的跨平台工作流中，可运行于网页、macOS 和 Windows。
+
+项目的产品原则、数据契约、交互取舍和工程演进边界见 [《OpenXPSAnalyzer 软件设计哲学手册》](DESIGN_PHILOSOPHY.md)。
+
+> OpenXPSAnalyzer 只处理 Avantage 已导出的数据，不替代数据采集、背景处理或峰拟合。项目与 Thermo Fisher Scientific 无隶属或官方合作关系；Avantage 及相关商标归其各自权利人所有。
 
 ## 主要功能
 
@@ -88,12 +93,14 @@ from xps_app.multipanel import MultiPanelConfig, export_multi_panel_figure
 ## 项目结构
 
 ```text
-XPSapp/
+OpenXPSAnalyzer/
 ├── pyproject.toml              # uv 依赖、Flet 构建和工具配置
 ├── uv.lock                     # 可复现依赖锁
 ├── README.md
 ├── DESIGN_PHILOSOPHY.md        # 产品与技术设计哲学手册
-├── LICENSE                     # Jay Mamun 专有软件许可
+├── CONTRIBUTING.md             # 贡献流程与开发约定
+├── SECURITY.md                 # 安全问题报告方式
+├── LICENSE                     # GNU AGPL v3 标准许可证正文
 ├── src/
 │   ├── main.py                 # Flet 标准入口
 │   ├── assets/                 # 打包资源目录
@@ -154,8 +161,12 @@ export_multi_panel_figure(
 
 程序优先使用文件名规则识别 `survey`，并结合 Avantage 的“拟合包封/Background”描述行区分拟合谱。未手动传入化学键名称时，会从描述行生成 `C1s Scan A` 等分峰名；之后可在 Flet 界面中使用“分峰命名”按照 GMA 的化学态映射进行修改。应用内“多子图绘图”使用同一接口，并提供谱图勾选、顺序调整、行列容量检查、标签位置、色卡、图例、尺寸、DPI 和格式设置。
 
-## 著作权
+## 贡献
 
-Copyright © 2026 Jay Mamun. All rights reserved.
+欢迎提交问题、功能建议和 Pull Request。开始前请阅读 [CONTRIBUTING.md](CONTRIBUTING.md)，并确保测试和静态检查通过。
 
-本项目为专有软件，软件及源代码著作权归 Jay Mamun 所有。未经书面许可，不得复制、修改、分发、再授权、出售或基于本软件创建衍生作品。完整条款见 [LICENSE](LICENSE)。
+## 开源许可
+
+Copyright © 2026 Jay Mamun and OpenXPSAnalyzer contributors.
+
+本项目采用 [GNU Affero General Public License v3.0 or later](LICENSE)（`AGPL-3.0-or-later`）发布。你可以使用、研究、修改和再分发本软件，也可以收费提供副本或服务；分发修改版或通过网络向用户提供修改版时，必须按照许可证提供相应源代码。本软件不提供任何形式的担保。

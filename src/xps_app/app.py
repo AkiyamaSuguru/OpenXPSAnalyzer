@@ -1,4 +1,4 @@
-"""Flet desktop user interface for XPS Analyzer."""
+"""Flet desktop user interface for OpenXPSAnalyzer."""
 
 from __future__ import annotations
 
@@ -41,11 +41,12 @@ BORDER = "#D5E1E4"
 TEXT_PRIMARY = "#1E3238"
 TEXT_MUTED = "#60747A"
 ERROR = "#A43F46"
-APP_VERSION = "0.3.0"
+APP_VERSION = "0.4.0"
+PROJECT_URL = "https://github.com/AkiyamaSuguru/OpenXPSAnalyzer"
 PREVIEW_PAGE_SIZE = 50
 
 
-class XPSAnalyzerApp:
+class OpenXPSAnalyzerApp:
     """Stateful application shell; numerical work remains in service modules."""
 
     def __init__(self, page: ft.Page) -> None:
@@ -335,7 +336,7 @@ class XPSAnalyzerApp:
         self.multi_panel_dialog = self._build_multi_panel_dialog()
 
     def build(self) -> None:
-        self.page.title = "XPS Analyzer"
+        self.page.title = "OpenXPSAnalyzer"
         self.page.theme_mode = ft.ThemeMode.LIGHT
         self.page.theme = ft.Theme(color_scheme_seed=ACCENT, use_material3=True)
         self.page.bgcolor = SURFACE
@@ -368,7 +369,7 @@ class XPSAnalyzerApp:
                     ft.Icon(ft.Icons.SCIENCE_OUTLINED, color=ft.Colors.WHITE, size=25),
                     ft.Column(
                         [
-                            ft.Text("XPS Analyzer", size=18, weight=ft.FontWeight.BOLD),
+                            ft.Text("OpenXPSAnalyzer", size=18, weight=ft.FontWeight.BOLD),
                             ft.Text("Avantage 数据分析工作台", size=11, opacity=0.78),
                         ],
                         spacing=0,
@@ -497,7 +498,7 @@ class XPSAnalyzerApp:
                     self.spectrum_list,
                     ft.Container(
                         content=ft.Text(
-                            f"© 2026 Jay Mamun · v{APP_VERSION}",
+                            f"OpenXPSAnalyzer · AGPL-3.0-or-later · v{APP_VERSION}",
                             size=10,
                             color=TEXT_MUTED,
                         ),
@@ -594,7 +595,7 @@ class XPSAnalyzerApp:
                     [
                         ft.Icon(ft.Icons.VERIFIED_USER_OUTLINED, size=14, color=ACCENT),
                         ft.Text(
-                            "XPS Analyzer · Copyright © 2026 Jay Mamun · All rights reserved.",
+                            "OpenXPSAnalyzer · GNU AGPL v3 or later · Source available on GitHub",
                             size=10,
                             color=TEXT_MUTED,
                         ),
@@ -700,7 +701,7 @@ class XPSAnalyzerApp:
             title=ft.Row(
                 [
                     ft.Icon(ft.Icons.SCIENCE_OUTLINED, color=ACCENT, size=28),
-                    ft.Text("XPS Analyzer 软件说明", weight=ft.FontWeight.W_600),
+                    ft.Text("OpenXPSAnalyzer 软件说明", weight=ft.FontWeight.W_600),
                 ]
             ),
             content=ft.Container(
@@ -720,11 +721,13 @@ class XPSAnalyzerApp:
                         ft.Container(
                             content=ft.Column(
                                 [
-                                    ft.Text("著作权声明", weight=ft.FontWeight.W_600, color=ACCENT),
+                                    ft.Text("开源许可", weight=ft.FontWeight.W_600, color=ACCENT),
                                     ft.Text(
-                                        "Copyright © 2026 Jay Mamun. All rights reserved.\n"
-                                        "本软件及其源代码的著作权归 Jay Mamun 所有。未经书面许可，"
-                                        "不得复制、修改、分发、再许可或用于商业发布。",
+                                        "Copyright © 2026 Jay Mamun and OpenXPSAnalyzer contributors.\n"
+                                        "本软件按照 GNU AGPL v3 或更高版本发布。你可以使用、修改和"
+                                        "再分发；分发修改版或通过网络提供修改版时，必须按许可证提供"
+                                        "相应源代码。本软件不提供任何担保。\n"
+                                        f"源代码：{PROJECT_URL}",
                                         selectable=True,
                                     ),
                                 ],
@@ -759,7 +762,10 @@ class XPSAnalyzerApp:
                     scroll=ft.ScrollMode.AUTO,
                 ),
             ),
-            actions=[ft.Button("关闭", icon=ft.Icons.CLOSE, on_click=self._close_dialog)],
+            actions=[
+                ft.TextButton("查看源代码", icon=ft.Icons.CODE, url=PROJECT_URL),
+                ft.Button("关闭", icon=ft.Icons.CLOSE, on_click=self._close_dialog),
+            ],
         )
 
     def _build_multi_panel_dialog(self) -> ft.AlertDialog:
@@ -1868,7 +1874,7 @@ class XPSAnalyzerApp:
 
     async def _open_project(self, _: ft.Event[Any]) -> None:
         files = await ft.FilePicker().pick_files(
-            dialog_title="打开 XPS Analyzer NetCDF 项目",
+            dialog_title="打开 OpenXPSAnalyzer NetCDF 项目",
             file_type=ft.FilePickerFileType.CUSTOM,
             allowed_extensions=["nc", "nc4", "netcdf"],
             with_data=True,
@@ -1931,7 +1937,7 @@ class XPSAnalyzerApp:
             return
 
         path = await ft.FilePicker().save_file(
-            dialog_title="保存 XPS Analyzer 项目",
+            dialog_title="保存 OpenXPSAnalyzer 项目",
             file_name=file_name,
             file_type=ft.FilePickerFileType.CUSTOM,
             allowed_extensions=["nc"],
@@ -2125,7 +2131,11 @@ class XPSAnalyzerApp:
         return cleaned.strip(" .") or "xps-spectrum"
 
 
+# Backward-compatible import for integrations built against versions before 0.4.0.
+XPSAnalyzerApp = OpenXPSAnalyzerApp
+
+
 def main(page: ft.Page) -> None:
     """Application entry point used by ``src/main.py``."""
 
-    XPSAnalyzerApp(page).build()
+    OpenXPSAnalyzerApp(page).build()
