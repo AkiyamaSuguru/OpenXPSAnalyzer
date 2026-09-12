@@ -8,6 +8,7 @@ OpenXPSAnalyzer 是一个使用 Flet 构建的开源 Avantage XPS 数据后处�
 项目的产品原则、数据契约、交互取舍和工程演进边界见 [《OpenXPSAnalyzer 软件设计哲学手册》](DESIGN_PHILOSOPHY.md)。
 
 > OpenXPSAnalyzer 只处理 Avantage 已导出的数据，不替代数据采集、背景处理或峰拟合。项目与 Thermo Fisher Scientific 无隶属或官方合作关系；Avantage 及相关商标归其各自权利人所有。
+> 开发者不对软件提供任何保证，使用时请自行核对数据，避免错误。
 
 ## 主要功能
 
