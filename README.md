@@ -168,12 +168,12 @@ export_multi_panel_figure(
 
 ## 许可说明
 
-Copyright © 2026 Jay Ma and OpenXPSAnalyzer contributors.
+Copyright © 2026 Jie Ma and OpenXPSAnalyzer contributors.
 
 **本项目只开源代码**。除代码以外的一切（作者的姓名与个人信息、设计与内容）均归作者所有，保留所有权利。
 
 - **代码：[GNU AGPL-3.0](LICENSE)（`AGPL-3.0-only`），强 Copyleft 许可证**。包括 `src/` 中的应用与 Python 包、`tests/` 中的测试，以及 `pyproject.toml` 等项目文件。你可以使用、研究、修改与分享本软件，也可以收费提供副本或服务；分享修改后的版本，或将其作为网络服务（例如网页版应用）运行时，必须以同一许可证向获得它或通过网络使用它的所有人提供全部源代码，保留版权与许可声明，并注明所作的修改。本软件不提供任何担保。
-- **保留：作者的姓名与个人信息**。Jay Ma（AkiyamaSuguru）以及有关作者的任何信息。
+- **保留：作者的姓名与个人信息**。Jie Ma（AkiyamaSuguru）以及有关作者的任何信息。
 - **保留：设计**。作者徽标的一切形式，以及作者为本项目创作的标志、图标、启动画面和其他设计元素，无论以何种形式出现在何处，包括今后加入本仓库的。
 - **保留：内容**。本说明、《软件设计哲学手册》及其他文档的文字，以及图片、数据等其他非代码内容。
 - **名称**：修改后的版本不得以“OpenXPSAnalyzer”或作者的标识作为自己的名称，须另行命名以区别于原版；本项目不授予这些名称与标识的任何商标权利（AGPL 第 7 条第 (c)、(e) 项）。
@@ -187,7 +187,7 @@ AGPL 不涵盖的一切均保留所有权利：未经作者书面许可，**禁�
 **Only the code is open source.** Everything else (the author's name and personal information, the design and the content) belongs to the author, with all rights reserved.
 
 - **Code: [GNU AGPL-3.0](LICENSE) (`AGPL-3.0-only`), a strong copyleft license.** The application and Python package in `src/`, the tests in `tests/` and the project files such as `pyproject.toml`. You may use, study, change and share it, and you may charge for copies or services. If you share a changed version, or run one as a network service (the web version of the app, for example), you must offer its full source code under the same license to everyone who receives it or uses it over the network, keep the copyright and license notices, and mark your changes. It comes with no warranty.
-- **Reserved: the author's name and personal information.** Jay Ma (AkiyamaSuguru) and any details about the author.
+- **Reserved: the author's name and personal information.** Jie Ma (AkiyamaSuguru) and any details about the author.
 - **Reserved: design.** The author's emblem in every form, and the logo, icons, splash artwork and other design elements the author made for this project, in whatever form and wherever they appear, including any added to this repository later.
 - **Reserved: content.** The text of this README, the design handbook and the other documents, and any other content that is not code, such as images and data.
 - **Name.** A modified version must not use the name "OpenXPSAnalyzer" or the author's marks as its own name; give it a different name that sets it apart from the original. No trademark rights to these names and marks are granted (AGPL sections 7(c) and 7(e)).

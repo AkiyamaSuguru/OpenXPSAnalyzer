@@ -4,7 +4,7 @@ version = "0.4.0"
 description = "Open-source cross-platform Flet application for Avantage XPS data post-processing"
 readme = "README.md"
 requires-python = ">=3.11,<3.13"
-authors = [{ name = "Jay Ma" }]
+authors = [{ name = "Jie Ma" }]
 license = "AGPL-3.0-only"
 license-files = ["LICENSE"]
 classifiers = [
@@ -54,7 +54,7 @@ dev = [
 org = "io.github.akiyamasuguru"
 product = "OpenXPSAnalyzer"
 company = "OpenXPSAnalyzer contributors"
-copyright = "Copyright (C) 2026 Jay Ma and OpenXPSAnalyzer contributors. AGPL-3.0-only."
+copyright = "Copyright (C) 2026 Jie Ma and OpenXPSAnalyzer contributors. AGPL-3.0-only."
 
 [tool.flet.app]
 path = "src"

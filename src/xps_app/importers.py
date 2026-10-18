@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2026 Jay Ma
+# SPDX-FileCopyrightText: 2026 Jie Ma
 # SPDX-License-Identifier: AGPL-3.0-only
 
 """Higher-level import workflows built on the Avantage readers."""

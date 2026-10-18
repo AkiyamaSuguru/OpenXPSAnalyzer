@@ -2,7 +2,7 @@
 
 > 产品与技术设计原则 · Version 1.0
 > 适用于 OpenXPSAnalyzer 0.4.x 及后续兼容版本
-> © 2026 Jay Ma · 保留所有权利（本手册属于非代码内容，不适用 AGPL，详见 README 的[许可说明](README.md#许可说明)）
+> © 2026 Jie Ma · 保留所有权利（本手册属于非代码内容，不适用 AGPL，详见 README 的[许可说明](README.md#许可说明)）
 
 ## 1. 手册目的
 
@@ -319,7 +319,7 @@ UI、第三方文件格式和批处理边界可以捕获广义异常，以保证
 OpenXPSAnalyzer 的产品名称、构建元数据、软件说明、README 和许可证必须保持一致：
 
 ```text
-Copyright © 2026 Jay Ma and OpenXPSAnalyzer contributors.
+Copyright © 2026 Jie Ma and OpenXPSAnalyzer contributors.
 SPDX-License-Identifier: AGPL-3.0-only
 ```
 

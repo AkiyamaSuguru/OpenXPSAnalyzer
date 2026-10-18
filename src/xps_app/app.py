@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2026 Jay Ma
+# SPDX-FileCopyrightText: 2026 Jie Ma
 # SPDX-License-Identifier: AGPL-3.0-only
 
 """Flet desktop user interface for OpenXPSAnalyzer."""
@@ -726,7 +726,7 @@ class OpenXPSAnalyzerApp:
                                 [
                                     ft.Text("许可说明", weight=ft.FontWeight.W_600, color=ACCENT),
                                     ft.Text(
-                                        "Copyright © 2026 Jay Ma and OpenXPSAnalyzer contributors.\n"
+                                        "Copyright © 2026 Jie Ma and OpenXPSAnalyzer contributors.\n"
                                         "本软件的代码按照 GNU AGPL v3（AGPL-3.0-only）发布。你可以使用、"
                                         "修改和再分发；分发修改版或通过网络提供修改版时，必须按许可证"
                                         "提供相应源代码。本软件不提供任何担保。\n"
