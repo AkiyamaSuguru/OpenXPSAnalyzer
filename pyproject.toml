@@ -4,11 +4,12 @@ version = "0.4.0"
 description = "Open-source cross-platform Flet application for Avantage XPS data post-processing"
 readme = "README.md"
 requires-python = ">=3.11,<3.13"
-authors = [{ name = "Jay Mamun" }]
-license = { file = "LICENSE" }
+authors = [{ name = "Jay Ma" }]
+license = "AGPL-3.0-only"
+license-files = ["LICENSE"]
 classifiers = [
     "Development Status :: 4 - Beta",
-    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
     "Operating System :: MacOS",
     "Operating System :: Microsoft :: Windows",
     "Programming Language :: Python :: 3.11",
@@ -36,7 +37,7 @@ Repository = "https://github.com/AkiyamaSuguru/OpenXPSAnalyzer"
 Issues = "https://github.com/AkiyamaSuguru/OpenXPSAnalyzer/issues"
 
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling>=1.27"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
@@ -53,7 +54,7 @@ dev = [
 org = "io.github.akiyamasuguru"
 product = "OpenXPSAnalyzer"
 company = "OpenXPSAnalyzer contributors"
-copyright = "Copyright (C) 2026 Jay Mamun and OpenXPSAnalyzer contributors. AGPL-3.0-or-later."
+copyright = "Copyright (C) 2026 Jay Ma and OpenXPSAnalyzer contributors. AGPL-3.0-only."
 
 [tool.flet.app]
 path = "src"

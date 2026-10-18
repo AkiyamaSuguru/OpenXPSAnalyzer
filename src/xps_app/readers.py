@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Jay Ma
+# SPDX-License-Identifier: AGPL-3.0-only
+
 """Readers for Excel files exported/processed by Thermo Avantage."""
 
 from __future__ import annotations

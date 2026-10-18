@@ -166,8 +166,32 @@ export_multi_panel_figure(
 
 欢迎提交问题、功能建议和 Pull Request。开始前请阅读 [CONTRIBUTING.md](CONTRIBUTING.md)，并确保测试和静态检查通过。
 
-## 开源许可
+## 许可说明
 
-Copyright © 2026 Jay Mamun and OpenXPSAnalyzer contributors.
+Copyright © 2026 Jay Ma and OpenXPSAnalyzer contributors.
 
-本项目采用 [GNU Affero General Public License v3.0 or later](LICENSE)（`AGPL-3.0-or-later`）发布。你可以使用、研究、修改和再分发本软件，也可以收费提供副本或服务；分发修改版或通过网络向用户提供修改版时，必须按照许可证提供相应源代码。本软件不提供任何形式的担保。
+**本项目只开源代码**。除代码以外的一切（作者的姓名与个人信息、设计与内容）均归作者所有，保留所有权利。
+
+- **代码：[GNU AGPL-3.0](LICENSE)（`AGPL-3.0-only`），强 Copyleft 许可证**。包括 `src/` 中的应用与 Python 包、`tests/` 中的测试，以及 `pyproject.toml` 等项目文件。你可以使用、研究、修改与分享本软件，也可以收费提供副本或服务；分享修改后的版本，或将其作为网络服务（例如网页版应用）运行时，必须以同一许可证向获得它或通过网络使用它的所有人提供全部源代码，保留版权与许可声明，并注明所作的修改。本软件不提供任何担保。
+- **保留：作者的姓名与个人信息**。Jay Ma（AkiyamaSuguru）以及有关作者的任何信息。
+- **保留：设计**。作者徽标的一切形式，以及作者为本项目创作的标志、图标、启动画面和其他设计元素，无论以何种形式出现在何处，包括今后加入本仓库的。
+- **保留：内容**。本说明、《软件设计哲学手册》及其他文档的文字，以及图片、数据等其他非代码内容。
+- **名称**：修改后的版本不得以“OpenXPSAnalyzer”或作者的标识作为自己的名称，须另行命名以区别于原版；本项目不授予这些名称与标识的任何商标权利（AGPL 第 7 条第 (c)、(e) 项）。
+
+AGPL 不涵盖的一切均保留所有权利：未经作者书面许可，**禁止以任何形式使用**，无论商业或非商业用途，包括文本与数据挖掘及 AI 训练。法律允许的合理使用（个人学习、研究，或注明出处的适当引用）无需许可，请遵守这一界限；按 AGPL 的要求保留代码中的版权与许可声明，同样无需许可。
+
+如基于本代码发布修改版，请另行命名，并将所有保留内容替换为你自己的。如需许可，请通过[主页书信页](https://akiyamasuguru.github.io/?lang=zh#letter)上的地址或 GitHub（[@AkiyamaSuguru](https://github.com/AkiyamaSuguru)）联系作者。
+
+### License
+
+**Only the code is open source.** Everything else (the author's name and personal information, the design and the content) belongs to the author, with all rights reserved.
+
+- **Code: [GNU AGPL-3.0](LICENSE) (`AGPL-3.0-only`), a strong copyleft license.** The application and Python package in `src/`, the tests in `tests/` and the project files such as `pyproject.toml`. You may use, study, change and share it, and you may charge for copies or services. If you share a changed version, or run one as a network service (the web version of the app, for example), you must offer its full source code under the same license to everyone who receives it or uses it over the network, keep the copyright and license notices, and mark your changes. It comes with no warranty.
+- **Reserved: the author's name and personal information.** Jay Ma (AkiyamaSuguru) and any details about the author.
+- **Reserved: design.** The author's emblem in every form, and the logo, icons, splash artwork and other design elements the author made for this project, in whatever form and wherever they appear, including any added to this repository later.
+- **Reserved: content.** The text of this README, the design handbook and the other documents, and any other content that is not code, such as images and data.
+- **Name.** A modified version must not use the name "OpenXPSAnalyzer" or the author's marks as its own name; give it a different name that sets it apart from the original. No trademark rights to these names and marks are granted (AGPL sections 7(c) and 7(e)).
+
+Everything the AGPL does not cover is reserved: **no use in any form** without the author's written permission, commercial or not, including text and data mining and AI training. Fair use that the law allows (personal study, research, or a brief quotation that names its source) needs no permission; please keep within it. Keeping the copyright and license notices in the code, as the AGPL requires, needs none either.
+
+If you publish a modified version, give it a different name and replace everything reserved with your own. To ask for permission, write to the author at the address on the letter page of the author's homepage (https://akiyamasuguru.github.io/#letter), or through GitHub ([@AkiyamaSuguru](https://github.com/AkiyamaSuguru)).

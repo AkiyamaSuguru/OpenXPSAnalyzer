@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Jay Ma
+# SPDX-License-Identifier: AGPL-3.0-only
+
 """Publication, preview, and interactive plotting interfaces for XPS data."""
 
 from __future__ import annotations

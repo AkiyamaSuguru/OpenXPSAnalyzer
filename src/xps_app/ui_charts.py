@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Jay Ma
+# SPDX-License-Identifier: AGPL-3.0-only
+
 """Flet-native interactive charts used by the application UI."""
 
 from __future__ import annotations

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Jay Ma
+# SPDX-License-Identifier: AGPL-3.0-only
+
 """xarray-backed XPS domain models."""
 
 from __future__ import annotations

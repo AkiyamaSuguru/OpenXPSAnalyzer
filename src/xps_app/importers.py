@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Jay Ma
+# SPDX-License-Identifier: AGPL-3.0-only
+
 """Higher-level import workflows built on the Avantage readers."""
 
 from __future__ import annotations
