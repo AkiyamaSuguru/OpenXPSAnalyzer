@@ -2,7 +2,7 @@
 
 > 产品与技术设计原则 · Version 1.0
 > 适用于 OpenXPSAnalyzer 0.4.x 及后续兼容版本
-> Copyright © 2026 Jay Mamun and OpenXPSAnalyzer contributors · AGPL-3.0-or-later
+> © 2026 Jie Ma · 保留所有权利（本手册属于非代码内容，不适用 AGPL，详见 README 的[许可说明](README.md#许可说明)）
 
 ## 1. 手册目的
 
@@ -319,15 +319,17 @@ UI、第三方文件格式和批处理边界可以捕获广义异常，以保证
 OpenXPSAnalyzer 的产品名称、构建元数据、软件说明、README 和许可证必须保持一致：
 
 ```text
-Copyright © 2026 Jay Mamun and OpenXPSAnalyzer contributors.
-SPDX-License-Identifier: AGPL-3.0-or-later
+Copyright © 2026 Jie Ma and OpenXPSAnalyzer contributors.
+SPDX-License-Identifier: AGPL-3.0-only
 ```
 
-项目采用 GNU Affero General Public License v3.0 or later。贡献者保留其贡献的著作权，并同意在同一许可证下提供贡献。修改版在分发时必须继续保持相同的开源自由；通过网络向用户提供修改版时，也必须提供对应源代码入口。任何贡献不得加入与 AGPL 冲突的额外限制。
+项目代码采用 GNU Affero General Public License v3.0 only（`AGPL-3.0-only`）。贡献者保留其贡献的著作权，并同意在同一许可证下提供贡献。修改版在分发时必须继续保持相同的开源自由；通过网络向用户提供修改版时，也必须提供对应源代码入口。任何贡献不得加入与 AGPL 冲突的额外限制。
+
+开源的只有代码。作者的姓名与个人信息，作者为本项目创作的标志、图标、启动画面等设计，以及本手册、README 等非代码内容均保留所有权利；修改版不得以 OpenXPSAnalyzer 作为自己的名称。详见 README 的[许可说明](README.md#许可说明)。
 
 项目欢迎个人与机构贡献，但合并标准以科学正确性、可维护性、可测试性和许可证兼容性为准。第三方依赖仍分别遵守其自身许可证；引入依赖、数据集、图标或示例文件前必须确认其许可证允许在本项目中使用和再分发。
 
-本手册描述产品设计原则，具体权利与义务以项目根目录的 `LICENSE` 为准。
+本手册描述产品设计原则，具体权利与义务以项目根目录的 `LICENSE` 和 README 的许可说明为准。
 
 ## 15. 质量与测试哲学
 

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Jie Ma
+# SPDX-License-Identifier: AGPL-3.0-only
+
 """Flet desktop user interface for OpenXPSAnalyzer."""
 
 from __future__ import annotations
@@ -498,7 +501,7 @@ class OpenXPSAnalyzerApp:
                     self.spectrum_list,
                     ft.Container(
                         content=ft.Text(
-                            f"OpenXPSAnalyzer · AGPL-3.0-or-later · v{APP_VERSION}",
+                            f"OpenXPSAnalyzer · AGPL-3.0-only · v{APP_VERSION}",
                             size=10,
                             color=TEXT_MUTED,
                         ),
@@ -595,7 +598,7 @@ class OpenXPSAnalyzerApp:
                     [
                         ft.Icon(ft.Icons.VERIFIED_USER_OUTLINED, size=14, color=ACCENT),
                         ft.Text(
-                            "OpenXPSAnalyzer · GNU AGPL v3 or later · Source available on GitHub",
+                            "OpenXPSAnalyzer · GNU AGPL v3 only · Source available on GitHub",
                             size=10,
                             color=TEXT_MUTED,
                         ),
@@ -721,12 +724,14 @@ class OpenXPSAnalyzerApp:
                         ft.Container(
                             content=ft.Column(
                                 [
-                                    ft.Text("开源许可", weight=ft.FontWeight.W_600, color=ACCENT),
+                                    ft.Text("许可说明", weight=ft.FontWeight.W_600, color=ACCENT),
                                     ft.Text(
-                                        "Copyright © 2026 Jay Mamun and OpenXPSAnalyzer contributors.\n"
-                                        "本软件按照 GNU AGPL v3 或更高版本发布。你可以使用、修改和"
-                                        "再分发；分发修改版或通过网络提供修改版时，必须按许可证提供"
-                                        "相应源代码。本软件不提供任何担保。\n"
+                                        "Copyright © 2026 Jie Ma and OpenXPSAnalyzer contributors.\n"
+                                        "本软件的代码按照 GNU AGPL v3（AGPL-3.0-only）发布。你可以使用、"
+                                        "修改和再分发；分发修改版或通过网络提供修改版时，必须按许可证"
+                                        "提供相应源代码。本软件不提供任何担保。\n"
+                                        "作者的姓名、设计与非代码内容保留所有权利；修改版须另行命名，"
+                                        "不得以 OpenXPSAnalyzer 作为名称。\n"
                                         f"源代码：{PROJECT_URL}",
                                         selectable=True,
                                     ),
